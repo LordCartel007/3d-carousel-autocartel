@@ -101,7 +101,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9); /* Dark background */
   z-index: 1000; /* Ensure it appears above everything */
@@ -268,5 +268,34 @@ body {
 @keyframes animate {
   100% {
     transform: rotateY(-20deg) rotateX(-40deg);
+  }
+}
+
+/* media query  */
+
+@media screen and (max-width: 767px) {
+  img,
+  iframe {
+    height: 50vh; /* Reduce height on small screens */
+    width: 50vh;
+  }
+  .flat-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  img,
+  iframe {
+    height: 70vh; /* Reduce height on small screens */
+    width: 70vh;
+  }
+}
+
+@media screen and (min-width: 1021px) {
+  img,
+  iframe {
+    height: 100vh; /* Reduce height on small screens */
+    width: 100vh;
   }
 }
