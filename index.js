@@ -4,37 +4,6 @@ var rotateSpeed = -60;
 var imgWidth = 120;
 var imgHeight = 170;
 
-function updateRadius() {
-  if (window.innerWidth <= 767) {
-    radius = 100; // Smaller radius for mobile screens
-  } else if (window.innerWidth >= 768 && window.innerWidth <= 1020) {
-    radius = 300; // Medium radius for tablets
-  } else {
-    radius = 350; // Default radius for large screens
-  }
-
-  // Apply the new radius (You may need to update positions accordingly)
-  applyRadius();
-}
-
-function applyRadius() {
-  var ospin = document.getElementById("spin-container");
-  var aEle = ospin.getElementsByTagName("img");
-
-  // Adjust positions based on the new radius
-  aEle.forEach((ele, index) => {
-    var angle = (index / aEle.length) * (2 * Math.PI);
-    ele.style.transform = `translate(${radius * Math.cos(angle)}px, ${
-      radius * Math.sin(angle)
-    }px)`;
-  });
-}
-
-// Run on page load and window resize
-window.addEventListener("load", updateRadius);
-window.addEventListener("resize", updateRadius);
-// --------START--------//
-
 setTimeout(init, 1000);
 
 var odrag = document.getElementById("drag-container");
