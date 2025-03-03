@@ -103,7 +103,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9); /* Dark background */
   z-index: 1000; /* Ensure it appears above everything */
@@ -112,9 +112,9 @@ body {
 }
 
 #overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
