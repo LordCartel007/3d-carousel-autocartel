@@ -37,15 +37,14 @@ body {
   line-height: 200px;
   font-size: 50px;
   text-align: center;
-  box-shadow: 0 0 8px #fff;
+  box-shadow: 0 0 8px #000;
   /* Apply reflection using transform */
   transform: rotateX(0deg);
-  filter: brightness(1.2);
 
   max-width: 240px;
-  max-height: 200px;
+  max-height: 400px;
   width: auto;
-  height: 200px;
+  height: 230px;
   object-fit: contain; /* Ensures the image fits properly without distortion */
 }
 
@@ -131,10 +130,10 @@ body {
   /* the background color setting  */
   --hue: 60;
   /*  */
-  --top: hsl(0 0% 80%);
-  --top-c: hsl(0 0% 70%);
-  --bottom-c: hsl(var(--hue) 100% 50%);
-  --blue: hsl(var(--hue) 100% 30%);
+  --top: #ffc107;
+  --top-c: #000000;
+  --bottom-c: #000000;
+  --blue: #ffc107;
   --shadow: hsl(var(--hue) 100% 20%);
 }
 
@@ -176,7 +175,7 @@ body {
   top: 50px;
   color: var(--top-c);
   text-shadow: 4px 0 10px #00000021;
-  color: rgb(255, 238, 0);
+  color: #rgb(14, 14, 16);
   margin-right: 50vh;
 }
 
@@ -271,4 +270,8 @@ body {
   100% {
     transform: rotateY(-20deg) rotateX(-40deg);
   }
+}
+
+.flat-text {
+  font-family: "Rye", serif;
 }
