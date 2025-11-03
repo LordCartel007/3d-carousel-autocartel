@@ -18,7 +18,7 @@ body {
   perspective: 1500px; /* modern perspective */
   transform-style: preserve-3d;
 }
-
+/* drag-container,  */
 #drag-container,
 #spin-container {
   position: relative;
